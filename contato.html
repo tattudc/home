@@ -7,6 +7,8 @@
     <title>Tarcisio Câmara - Contato</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sobre.css">
+    <link rel="stylesheet" href="css/style-contato.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -22,28 +24,28 @@
         </nav>
     </header>
     <main>
-        <header>
-            <h1>Contato</h1>
+        <header class="pagina-cabecalho">
+            <h1 class="pagina-cabecalho__titulo">Contato</h1>
         </header>
-        <section>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
-            <form action="#">
-                <div>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" name="nome" id="nome">
+        <section class="pagina-conteudo">
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
+            <form action="#" class="formulario">
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="nome">Nome:</label><br>
+                    <input class="formulario__campo" type="text" name="nome" id="nome">
                 </div>
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email">
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="email">Email:</label><br>
+                    <input class="formulario__campo" type="email" name="email" id="email">
                 </div>
-                <div>
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="mensagem">Mensagem:</label><br>
+                    <textarea class="formulario__campo" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
                 </div>
-                <input type="submit" value="Enviar"><br>
+                <input class="formulario__botao" type="submit" value="Enviar"><br>
             </form>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p><br>
-            <div>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p><br>
+            <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.0561470263433!2d-35.29797758592528!3d-5.7050288580095065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3a93114c162ff%3A0x4151377206792ca0!2sAv.+Coqueiros%2C+14%2C+Extremoz+-+RN%2C+59575-000!5e0!3m2!1spt-BR!2sbr!4v1535139802501" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
