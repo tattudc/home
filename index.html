@@ -7,6 +7,7 @@
     <title>Designer Responsivo</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-home.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -22,35 +23,35 @@
         </nav>
     </header>
     <main>
-        <header>
-            <h2>Texto grande aqui</h2>
-            <p>Texto menorzinho aqui</p>
-            <a href="#servicos">Role para ver mais</a>
+        <header class="cabecalho-home">
+            <h2 class="cabecalho-home__titulo">Texto grande aqui</h2>
+            <p class="cabecalho-home__subtitulo">Texto menorzinho aqui</p>
+            <a class="cabecalho-home__role" href="#servicos">Role para ver mais</a>
         </header>
-        <section id="servicos"><!--Seção de serviços-->
-            <h2>O que fazemos</h2>
-            <section>
+        <section id="servicos" class="servico"><!--Seção de serviços-->
+            <h2 class="home__titulo">O que fazemos</h2>
+            <section class="servico__item">
                 <img src="img/icone-desenvolvimento-web.png" alt="icone planeta terra">
                 <h3>Desenvolvimento web</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
+                <p class="servico__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
             </section>
-            <section>
+            <section class="servico__item">
                     <img src="img/icone-carrinho-compras.png" alt="icone carrinho de compras">
                     <h3>E-commerce</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
+                    <p class="servico__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
             </section>
-            <section>
+            <section class="servico__item">
                     <img src="img/icone-cafe.png" alt="icone cafe">
                     <h3>Café</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
+                    <p class="servico__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
             </section>            
         </section><!--Fim de Seção de serviços-->
-        <section><!--Seção de depoimentos-->
-            <h2>O que falam de nós</h2>
-            <section>
-                <img src="img/depoimentos/pessoa-1.jpg" alt="Foto da pessoa X">
-                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime."</p>
-                <p>Nome da pessoa - Cargo</p>
+        <section class="depoimentos"><!--Seção de depoimentos-->
+            <h2 class="home__titulo home__titulo--branco">O que falam de nós</h2>
+            <section class="depoimentos__item">
+                <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="Foto da pessoa X">
+                <p class="depoimentos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, maiores provident voluptate consectetur nobis dolores dolorum ipsa nesciunt porro modi totam dolore, corporis tempora possimus nam nostrum dicta molestiae maxime.</p>
+                <p class="depoimentos__pessoa">Nome da pessoa - Cargo</p>
             </section>
         </section><!--Fim de Seção de depoimentos-->
     </main>
