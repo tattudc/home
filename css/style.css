@@ -323,12 +323,27 @@ body {
   font-family: "Source Sans Pro"; }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 576px) {
+    .container {
+      width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px; } }
 
 .cabecalho {
   background: #fff;
-  padding: 15px; }
+  padding: 15px 0;
+  position: fixed;
+  width: 100%; }
 
 .rodape {
   color: #fff; }
@@ -525,12 +540,17 @@ body {
   margin-bottom: 20px; }
 
 .servico {
-  padding: 30px 0; }
+  padding: 30px 0;
+  overflow: auto; }
 
 .servico__item {
   text-align: center;
   padding: 0 15px;
   margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .servico__item {
+      float: left;
+      width: 33.333%; } }
 
 .servico__texto {
   color: #3a3a3a; }
@@ -541,6 +561,9 @@ body {
   color: #fff;
   text-align: center;
   padding: 50px 0; }
+  @media (min-width: 992px) {
+    .cabecalho-home {
+      height: 100vh; } }
 
 .cabecalho-home__titulo {
   font-size: 40px;
