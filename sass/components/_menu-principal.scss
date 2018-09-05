@@ -6,7 +6,7 @@
     background-color: #fff;
     background-image: url("../img/menuprincipal-btn-bg.png");
     background-repeat: no-repeat;
-    background-position: 5px 5px;
+    background-position: -48px 5px;
     border-color: #c4c4c4;
     border-style: solid;
     border-radius: 5px;
@@ -15,22 +15,47 @@
     position: absolute;
     top: 15px;
     right: 15px;
-}
-.menu-principal__btn--fechar{
-    background-position: -48px 5px;
+    @media(min-width: $breakpoint-am){
+        display: none;
+    }
+
 }
 .menu-principal__lista{
     padding: 0;
     list-style: none;
+    transition: margin 200ms ease-out;
+    @media(min-width: $breakpoint-am){
+        li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
 }
 .menu-principal__item{
     text-decoration: none;
     font-weight: bold;
     color: #343434;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
-    font-size: 18px;  
+    font-size: 18px;
+    height: 20px;
+    transition: all 200ms ease-out;  
 }
 .menu-principal__item--atual{
     color:$cor-principal;
+}
+@media(max-width: $breakpoint-am -1){
+    .menu-principal--fechado{
+    .menu-principal__btn{
+        background-position: 5px 5px;
+    }
+    .menu-principal__lista{
+        margin: 0;
+    }
+    .menu-principal__item{
+        margin:0;
+        height: 0;
+        overflow: hidden;
+    }
+    }
 }

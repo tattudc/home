@@ -3,10 +3,31 @@
     background-size: cover;
     color:#fff;
     text-align: center;
-    padding: 50px 0;
+    padding: 150px 0;
+    @media(min-width: $breakpoint-am){
+        background-image: url("../img/cabecalho-home-bg-md.jpg");
+    }
     @media(min-width: $breakpoint-lg){
             height: 100vh;
-}
+            .cabecalho-home__role{
+                display: block;
+                position: absolute;
+                background: url('../img/icone-mouse.png') no-repeat center right;
+                color: #fff;
+                bottom: 10px;
+                left: 50%;
+                height: 50px;
+                width: 190px;
+                text-align: left;
+                font-size: 20px;
+                text-decoration: none;
+                line-height: 45px;
+                margin-left: -95px;
+            }
+    }
+    @media(min-width: $breakpoint-xl){
+            background-image: url("../img/cabecalho-home-bg-xl.jpg");
+    }
 }
 .cabecalho-home__titulo{
     font-size: 40px;

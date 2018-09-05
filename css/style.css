@@ -344,6 +344,17 @@ body {
   padding: 15px 0;
   position: fixed;
   width: 100%; }
+  @media (min-width: 768px) {
+    .cabecalho {
+      min-height: 100px; }
+      .cabecalho .cabecalho {
+        float: left;
+        margin-top: 10px; }
+      .cabecalho .menu-principal {
+        float: right;
+        margin-top: 100 -83/2px; }
+        .cabecalho .menu-principal__lista {
+          margin-bottom: 0; } }
 
 .rodape {
   color: #fff; }
@@ -480,7 +491,7 @@ body {
   background-color: #fff;
   background-image: url("../img/menuprincipal-btn-bg.png");
   background-repeat: no-repeat;
-  background-position: 5px 5px;
+  background-position: -48px 5px;
   border-color: #c4c4c4;
   border-style: solid;
   border-radius: 5px;
@@ -488,31 +499,48 @@ body {
   position: absolute;
   top: 15px;
   right: 15px; }
-
-.menu-principal__btn--fechar {
-  background-position: -48px 5px; }
+  @media (min-width: 768px) {
+    .menu-principal__btn {
+      display: none; } }
 
 .menu-principal__lista {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  transition: margin 200ms ease-out; }
+  @media (min-width: 768px) {
+    .menu-principal__lista li {
+      display: inline-block;
+      margin: 0 10px; } }
 
 .menu-principal__item {
   text-decoration: none;
   font-weight: bold;
   color: #343434;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
-  font-size: 18px; }
+  font-size: 18px;
+  height: 20px;
+  transition: all 200ms ease-out; }
 
 .menu-principal__item--atual {
   color: #f44242; }
+
+@media (max-width: 768px -1) {
+  .menu-principal--fechado .menu-principal__btn {
+    background-position: 5px 5px; }
+  .menu-principal--fechado .menu-principal__lista {
+    margin: 0; }
+  .menu-principal--fechado .menu-principal__item {
+    margin: 0;
+    height: 0;
+    overflow: hidden; } }
 
 .pagina-cabecalho {
   color: #f44242;
   background-image: url("../img/cabecalho-pagina-bg.jpg");
   background-attachment: fixed;
   color: #fff;
-  padding-top: 40px;
+  padding-top: 140px;
   padding-bottom: 40px; }
 
 .pagina-cabecalho__titulo {
@@ -560,10 +588,30 @@ body {
   background-size: cover;
   color: #fff;
   text-align: center;
-  padding: 50px 0; }
+  padding: 150px 0; }
+  @media (min-width: 768px) {
+    .cabecalho-home {
+      background-image: url("../img/cabecalho-home-bg-md.jpg"); } }
   @media (min-width: 992px) {
     .cabecalho-home {
-      height: 100vh; } }
+      height: 100vh; }
+      .cabecalho-home .cabecalho-home__role {
+        display: block;
+        position: absolute;
+        background: url("../img/icone-mouse.png") no-repeat center right;
+        color: #fff;
+        bottom: 10px;
+        left: 50%;
+        height: 50px;
+        width: 190px;
+        text-align: left;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 45px;
+        margin-left: -95px; } }
+  @media (min-width: 1200px) {
+    .cabecalho-home {
+      background-image: url("../img/cabecalho-home-bg-xl.jpg"); } }
 
 .cabecalho-home__titulo {
   font-size: 40px;
