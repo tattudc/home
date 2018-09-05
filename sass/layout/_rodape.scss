@@ -10,7 +10,9 @@
     background-color: #272525;
     background-image: url("../img/rodape-bg.jpg");
     background-size: cover;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: auto;
 }
 
 .rodape__linha-2{
@@ -44,4 +46,19 @@
     content: '>';
     margin-right: 8px;
     color: $cor-principal;
+}
+@media (min-width: $breakpoint-am){
+    .rodape__linha-1{
+        background-image: url("../img/rodape-bg-md.jpg");
+    }
+    .rodape__coluna{
+        float: left;
+        width: 33.333%;
+        padding: 0 15px;
+    }
+}
+@media (min-width: $breakpoint-xl){
+    .rodape__linha-1{
+        background-image: url("../img/rodape-bg-xl.jpg");
+    }
 }

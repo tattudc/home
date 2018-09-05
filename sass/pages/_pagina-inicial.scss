@@ -9,6 +9,13 @@
     }
     @media(min-width: $breakpoint-lg){
             height: 100vh;
+            .cabecalho-home__titulo{
+                font-size: 60px;
+                margin-top: 200px;
+            }
+            .cabecalho-home__subtitulo{
+                font-size: 22px;
+            }
             .cabecalho-home__role{
                 display: block;
                 position: absolute;
