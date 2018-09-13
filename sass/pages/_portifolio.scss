@@ -1,14 +1,58 @@
 .lista-trabalho{
     list-style: none;
     padding: 0;
+    @media(min-width:$breakpoint-am){
+        .lista-trabalho__item{
+        margin: 0;
+        float: left;
+        width: 50%;
+        background-color: $cor-principal;
+        :hover{
+            .lista-trabalho__img{
+                opacity: 0.1;
+            }
+            .lista-trabalho__titulo{
+                opacity: 1;
+            }
+        }
+        }
+        .lista-trabalho__img{
+            opacity: 1;
+        }
+        .lista-trabalho__titulo{
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            border: none;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 100%;
+            background: url('../img/icone-olho.png') no-repeat bottom center;
+            padding-bottom: 35px;
+            font-size: 22px;
+            opacity: 0;
+        }
+    }
+    @media(min-width:$breakpoint-lg){
+        .lista-trabalho__item{
+        width: 33.333%;
+        }
+    }
 }
 .lista-trabalho__item{
     margin-left: -15px;
     margin-right: -15px;
     margin-bottom: 50px;
+    position: relative;
 }
 .lista-trabalho__item a{
     text-decoration: none;
+}
+.lista-trabalho__img{
+    width: 100%;
+    height: auto;
 }
 .lista-trabalho__titulo{
     color: #000;
